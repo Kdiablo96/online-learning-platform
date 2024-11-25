@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    background-color: #6e6868;
+}
+
+.main-wrap {
+    display: flex;
+    width: 100%;
+}
+
+.main-head {
+    width: 250px;
+    height: 100vh;
+    background: #0a1128;
+    position: fixed;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+}
+
+.main-nav {
+    width: 100%;
+}
+
+.navbar-nav .title {
+    padding: 15px 19px;
+    border-bottom: 1px solid #2f2f2f;
+}
+
+.navbar-nav .title h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav .title h3 i {
+    margin-right: 8px; /* Spacing for icon */
+}
+
+.nav-list {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-list-item {
+    margin-bottom: 10px;
+}
+
+.nav-list-item .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    border-radius: 5px; /* Rounded corners */
+}
+
+.nav-list-item .nav-link:hover {
+    background: #2f3e46;
+    transform: translateX(5px); /* Slight movement on hover */
+}
+
+.link-text {
+    margin-left: 15px; /* Spacing for text */
+    font-size: 19px; /* Consistent font size */
+}
+
+/* Optional: Style for active link */
+.nav-list-item .nav-link.active {
+    background: #3a4b5a; /* Different background for active link */
+}
+.title {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
+
+.logo-img {
+    width: 40px; /* Set a specific width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 8px; /* Spacing between image and text */
+}
+
+.content {
+    margin-left: 250px; /* Ensure the content is beside the sidebar */
+    padding: 20px;
+    width: calc(100% - 250px); /* Adjust width accordingly */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+}
+.showcase {
+    width: 100%;
+    height: 400px; /* Fixed height for showcase */
+    background-color:#6e6868;
+    position: relative;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
+    margin-right:auto;
+    margin-left: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.showcase .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Padding for the overlay */
+    background: url('pngtree-online-education-in-quarantine-a-3d-rendered-learning-concept-image_3603756.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color:#6e6868;
+}
+
+.showcase .content1 {
+    color: white; /* Text color */
+    text-align: center; /* Center text within the content */
+    max-width: 800px; /* Limit max width for better readability */
+}
+
+.showcase .content1 h3 {
+    font-size: 45px; /* Increased font size for emphasis */
+    color: #f4f4f4;
+    font-weight: 700; /* Bold font for prominence */
+    margin-bottom: 15px; /* Space between heading and paragraph */
+}
+
+.showcase .content1 p {
+    font-size: 20px; /* Increased paragraph font size */
+    font-weight: 400; /* Normal weight */
+    line-height: 1.6; /* Improved line height for readability */
+    margin: 0 0 15px; /* Margin for spacing */
+}
+
+.showcase .quote {
+    font-size: 20px; /* Size for the quote */
+    font-style: italic; /* Italic for emphasis */
+    color: #ffcc00; /* Bright color for the quote */
+    margin: 20px 0; /* Margin for spacing */
+    position: relative; /* For positioning the quote */
+}
+
+.showcase .quote::before {
+    content: "“"; /* Opening quote mark */
+    font-size: 40px; /* Size for the opening quote */
+    position: absolute;
+    left: -25px; /* Offset from text */
+    top: -10px; /* Slightly above the text */
+    color: #ffcc00; /* Bright color */
+}
+
+.showcase .quote::after {
+    content: "”"; /* Closing quote mark */
+    font-size: 40px; /* Size for the closing quote */
+    position: absolute;
+    right: -25px; /* Offset from text */
+    bottom: -10px; /* Slightly below the text */
+    color: #ffcc00; /* Bright color */
+}
+
+.resources {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping of items */
+    justify-content: center; /* Center items horizontally */
+    background-color:#6e6868; /* Light background for contrast */
+    padding: 40px 20px; /* Generous padding */
+    color: #000000;
+}
+
+.resources h1 {
+    width: 100%; /* Full width for heading */
+    text-align: center; /* Center align heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Font size for heading */
+    color: #000000; /* Dark gray for text */
+    margin-top: 100px;
+}
+
+.testimony-container {
+    background-color:#6e6868; /* White background for individual boxes */
+    border: 1px solid #ccc; /* Light border around each box */
+    padding: 20px; /* Inner padding for boxes */
+    margin: 10px; /* Space around boxes */
+    width: calc(20% - 20px); /* Width of each box, accounting for margins (adjusted for 5 in a row) */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for boxes */
+    text-align: left; /* Left align text within boxes */
+    color: #000000;
+}
+
+.testimony {
+    font-style: italic; /* Italicize testimony text */
+    color: #000000; /* Darker gray for testimony text */
+    margin-bottom: 10px; /* Space below testimony */
+}
+
+.testimony-container div {
+    font-weight: bold; /* Make names bold */
+    color: #333; /* Dark gray for names */
+}
+
+.testimonials {
+    margin: 0; /* No margin to center */
+    padding: 30px; /* Padding for the section */
+    text-align: left; /* Align text to the left */
+
+}
+
+.categories {
+    display: flex; /* Flexbox for inline arrangement */
+    justify-content: flex-start; /* Align items to the left */
+}
+
+.sub-section {
+    flex: 1; /* Each sub-section takes equal space */
+    margin: 55px 50px; /* Increased spacing between sub-sections */
+    width: 200px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.sub-section h1 {
+    font-size: 1.5em; /* Larger font size for headings */
+    margin-bottom: 15px; /* Space below heading */
+    color: #000000; /* Dark gray color */
+}
+
+.heading p {
+    font-size:20px; /* Slightly larger font size for topics */
+    font-weight: 500px;
+    font-weight: bold;
+    margin: 10px 0; /* More space between topics */
+    color: purple; /* Purple color for course names */
+    text-decoration: underline;
+}
+.heading p:hover{
+    color: #2c003d;
+    font-weight: 500px;
+    cursor: pointer;
+}
+.courses {
+    padding: 20px;
+    background-color:#6e6868;
+    color: #000000;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.courses h3 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.starter {
+    font-family: 'Ubuntu', sans-serif; /* Consistent font styling */
+    line-height: 1.8; /* Increased line height for spacing */
+    text-align: left; /* Align text to the left */
+}
+
+.starter h1 {
+    font-size: 35px; /* Larger font size for the main title */
+    color: #000000; /* Dark blue for a professional touch */
+    margin-bottom: 5px; /* Space below the title */
+}
+.starter p {
+    font-size: 20px; /* Slightly larger font size for readability */
+    color: #333; /* Darker text for contrast */
+}
+
+.starter strong {
+    color: #f57f20; /* Highlighted color for emphasis */
+}
+.ok{
+    margin-bottom: 40px;
+}
+.gh-wego {
+    border: 2px solid #ccc; /* Gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    margin: 20px auto; /* Center the container */
+    max-width: 1200px; /* Increased maximum width for the container */
+    width: 100%; /* Full width */
+    background-color:#6e6868;
+    margin-top: 150px;
+    color: #000000;
+}
+
+.starter {
+    margin-bottom: 30px; /* Space below the starter section */
+}
+
+.courses-gallery {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Space between course items */
+}
+
+.course-item {
+    flex: 1 1 calc(33.333% - 20px); /* Responsive sizing */
+    text-align: center; /* Center text within course items */
+}
+
+.course-item img {
+    max-width: 100%; /* Responsive images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Rounded corners for images */
+}
+
+
+.starter i {
+    font-style: italic; /* Italicized for differentiation */
+}
+
+
+
+.courses-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items if there's not enough space */
+    justify-content: center; /* Center items horizontally */
+    gap: 15px; /* Space between items */
+}
+
+.course-item {
+    text-align: center; /* Center text below the image */
+    width: 150px; /* Set a uniform width */
+}
+
+.course-item img {
+    width: 100%; /* Responsive image */
+    height: 200px; /* Uniform height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.course-item a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+.course-item:hover img {
+    transform: scale(1.05); /* Slightly zoom image on hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.course-item p {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #000000;
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 29px;
+    margin-bottom: 10px;
+    color: #000000; /* Darker color for better readability */
+    text-align: center; /* Center headings */
+}
+
+blockquote {
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #007BFF;
+    margin: 10px 0;
+}
+
+footer {
+    background-color:#6e6868;
+    color: #ECF0F1;
+    padding: 40px 0; /* Increased vertical padding */
+    width: 100%; /* Set to full width */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px; /* Added padding for the container */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px; /* Increased min-width for better spacing */
+    margin: 20px; /* Increased margin for spacing between sections */
+    padding: 20px; /* Added padding inside each section */
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #ECF0F1; /* Slightly thicker border */
+    padding-bottom: 10px;
+    vertical-align: middle;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0; /* Increased margin for list items */
+}
+
+.footer-section a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 100px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section input[type="email"],
+.footer-section textarea {
+    margin: 10px 0; /* Increased margin for inputs */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.footer-section button {
+    background-color: #2980B9;
+    color: #ECF0F1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Added transition for hover effect */
+}
+
+.footer-section button:hover {
+    background-color: #3498DB;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px; /* Increased margin for separation from sections */
+    font-size: 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #ECF0F1;
+    text-decoration: none;
+    font-size: 18px
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

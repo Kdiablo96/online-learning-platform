@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <title>Online Learning Platform - Courses</title>
+</head>
+<body>
+    <header>
+        <h1>Courses</h1>
+        <p>Explore a variety of subjects tailored to enhance your skills and knowledge.</p>
+        <div class="search-container">
+            <input type="text" id="course-search" placeholder="Search for a course..." autocomplete="off">
+            <button id="search-button">Search</button>
+            <div class="result-box"></div>
+        </div>
+        
+    </header>
+
+    <main>
+        <section class="video-section">
+            <h2>Our Learning Environment</h2>
+            <video class="responsive-video" autoplay muted>
+                <source src="What is a Great E-Learning Platform_.mp4" type="video/mp4">
+                <source src="What is a Great E-Learning Platform_.ogg" type="video/ogg">
+                <source src="onlinelearning-platform/What is a Great E-Learning Platform_.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+        
+        <section class="featured-courses">
+            <h2>Featured Courses</h2>
+            <div class="course-card" data-course-id="1">
+                <h3><a href="#course1">Web Development Bootcamp</a></h3>
+                <p><strong>Duration:</strong> 5-6 weeks</p>
+                <p><strong>Level:</strong> Beginner to Intermediate</p>
+                <p>Dive into the world of web development. Learn HTML, CSS, and JavaScript to create your own web applications. Ideal for those looking to build a career in tech.</p>
+                <p><strong>What You'll Learn:</strong></p>
+                <ul>
+                    <li>HTML & CSS Fundamentals</li>
+                    <li>JavaScript Basics and DOM Manipulation</li>
+                    <li>Building Responsive Web Designs</li>
+                </ul>
+                <a href="https://www.edx.org/learn/computer-science/ibm-guided-project-web-development-w-html-css-for-beginners?index=product&queryID=2f0ed6fa72bf963ea650b2bc5385bd5c&position=2&results_level=first-level-results&term=web+development+basics&objectID=course-40eabb04-17b3-430d-85e8-3f2ef697417e&campaign=Guided+Project%3A+Web+Development+w%2F+HTML+%26+CSS+for+Beginners&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Fsearch">
+                    <button>Enroll Now</button>
+                </a>
+                <a href="https://learning.edx.org/course/course-v1:IBM+GPXX01K3ENV2+1T2024/home">
+                    <button>Preview Course</button>
+                </a>
+            </div>
+            
+            <div class="course-card" data-course-id="2">
+                <h3><a href="#course2"> Introduction  to Data Science</a></h3>
+                <p><strong>Instructor:</strong> John Smith</p>
+                <p><strong>Duration:</strong> 3-6 weeks</p>
+                <p><strong>Level:</strong> Beginner</p>
+                <p>Master the basics of data analysis, visualization, and machine learning using Python and R. Perfect for aspiring data scientists!</p>
+                <p><strong>What You'll Learn:</strong></p>
+                <ul>
+                    <li>Data Cleaning and Preprocessing</li>
+                    <li>Exploratory Data Analysis</li>
+                    <li>Introduction to Machine Learning Algorithms</li>
+                </ul>
+                <a href="https://www.edx.org/learn/data-science/ibm-introduction-to-data-science?index=product&queryID=43d374c8a940442744d99e7a1a2797ff&position=4&linked_from=autocomplete&c=autocomplete">
+                    <button>Enroll Now</button>
+                </a>
+                <a href="https://learning.edx.org/course/course-v1:IBM+DS0101EN+3T2023/home">
+                    <button>Preview Course</button>
+                </a>
+            </div>
+            
+            <div class="course-card" data-course-id="3">
+                <h3><a href="#course3">Digital Marketing Mastery</a></h3>
+                <p><strong>Instructor:</strong> Sarah Lee</p>
+                <p><strong>Duration:</strong> 6 weeks</p>
+                <p><strong>Level:</strong> All Levels</p>
+                <p>Understand the fundamentals of digital marketing, SEO, content creation, and social media strategies. A must for any marketer!</p>
+                <p><strong>What You'll Learn:</strong></p>
+                <ul>
+                    <li>SEO Best Practices</li>
+                    <li>Content Marketing Strategies</li>
+                    <li>Effective Use of Social Media</li>
+                </ul>
+                <a href="https://www.edx.org/executive-education/university-of-cape-town-digital-marketing?index=product&queryID=9ae4261a04d11a986c346ef1fd7a9a6e&position=1&linked_from=autocomplete&c=autocomplete">
+                    <button>Enroll Now</button>
+                </a>
+                <a href="https://www.linkedin.com/learning/digital-marketing-foundations-15054577?trk=learning-serp_learning-search-card_search-card&upsellOrderOrigin=default_guest_learning">
+                    <button>Preview Course</button>
+                </a>
+            </div>
+        </section>
+        
+        <footer>
+            <h2>Get Started Today!</h2>
+            <p>Ready to start your learning journey? Browse our course offerings and take the first step toward achieving your goals!</p>
+            <a href="#courses">
+                <button>View All Courses</button>
+            </a>
+        </footer>
+        
+        <style>
+            .featured-courses {
+                padding: 20px;
+                background-color: #8b7e7e;
+                border-radius: 10px;
+            }
+            
+            .course-card {
+                background-color: #8b7e7e;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                padding: 15px;
+                margin-bottom: 20px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            
+            .course-card h3 a {
+                color: #007BFF;
+                text-decoration: none;
+            }
+            
+            .course-card h3 a:hover {
+                text-decoration: underline;
+            }
+            
+            button {
+                background-color: #007BFF;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 15px;
+                cursor: pointer;
+                margin-right: 10px;
+            }
+            
+            button:hover {
+                background-color: #0056b3;
+            }
+            
+            footer {
+                text-align: center;
+                margin-top: 40px;
+                padding: 20px;
+                background-color: #007BFF;
+                color: white;
+                border-radius: 10px;
+            }
+            
+            footer button {
+                background-color: #fff;
+                color: #007BFF;
+            }
+            
+            footer button:hover {
+                background-color: #e2e2e2;
+            }
+        </style>
+        
+    <script src="course.js"></script>
+</body>
+</html>

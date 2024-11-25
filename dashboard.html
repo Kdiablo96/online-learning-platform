@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Education Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <main class="main-content">
+            <header>
+                <h1>Welcome to Your Dashboard</h1>
+                <div class="user-profile">
+                    <img src="https://www.shutterstock.com/image-photo/elearning-online-education-training-webinar-600w-2082750772.jpg" alt="Profile Picture" class="profile-pic">
+                    <div class="user-info">
+                        <h2>Chuks Ottih</h2>
+                        <p>Computer Programmer</p>
+                        <a href="profile.html" class="edit-profile">
+                            <button class="edit-profile">Edit Profile</button>
+                        </a>
+                        
+                    </div>
+                </div>
+            </header>
+
+            <section class="statistics">
+                <div class="stat-card">Total Students Offering Course: <strong>150</strong></div>
+                <div class="stat-card">Total Courses: <strong>25</strong></div>
+                <div class="stat-card">Active Courses: <strong>10</strong></div>
+                <div class="stat-card">New Enrollments: <strong>5</strong></div>
+            </section>
+
+            <section class="course-overview">
+                <h2>Your Courses</h2>
+                <div class="course-list">
+                    <div class="course-item">
+                        <h3>Introduction to Programming with  Python</h3>
+                        <p>Progress: 20%</p>
+                        <a href="https://www.edx.org/learn/python/harvard-university-cs50-s-introduction-to-programming-with-python?index=product&queryID=bbe305db345ada3fe174f42f069de42e&position=5&linked_from=autocomplete&c=autocomplete" class="continue-course">
+                            <button class="continue-course">Continue</button>
+                        </a>
+                       
+                    </div>
+                    <div class="course-item">
+                        <h3>Web Development Basics</h3>
+                        <p>Progress: 50%</p>
+                        <a href="https://www.edx.org/learn/computer-science/ibm-guided-project-web-development-w-html-css-for-beginners?index=product&queryID=7a641366fabb49973cd1a04731724611&position=2&linked_from=autocomplete&c=autocomplete" class="continue-course">
+                            <button class="continue-course">Continue</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="assignments">
+                <h2>Upcoming Assignments</h2>
+                <ul>
+                    <li>Assignment 1 - Due: Nov 10</li>
+                    <li>Quiz - Due: Nov 15</li>
+                    <li>Assignment 2 - Due: Nov 20</li>
+                    <li>Quiz - Due:  Nov 25</li>
+
+                </ul>
+            </section>
+
+            <section class="recent-activity">
+                <h2>Recent Activity</h2>
+                <ul>
+                    <li>Completed lesson on JavaScript basics</li>
+                    <li>Completed lesson on Fundementals Of Multimedia</li>
+                    <li>Submitted assignment for Web Development</li>
+                </ul>
+            </section>
+
+            <section class="learning-goals">
+                <h2>Your Learning Goals</h2>
+                <div class="goal">
+                    <h3>Goal: Master Python Programming</h3>
+                    <p>Progress: 50%</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="goal">
+                    <h3>Goal: Build 3 Projects</h3>
+                    <p>Progress: 30%</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <div class="goal">
+                    <h3>Goal: Develop  a Mobile App</h3>
+                    <p>Progress: 10%</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 10%;"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recommended-courses">
+                <h2>Recommended Courses</h2>
+                <ul>
+                    <li><a href="https://www.edx.org/learn/data-science/rwth-aachen-university-basics-of-data-science?index=product&queryID=6b466b467c457fc8f72c576d55e70de2&position=9&linked_from=autocomplete&c=autocomplete">Data Science Basics</a></li>
+                    <li><a href="https://www.edx.org/learn/machine-learning/the-university-of-california-san-diego-machine-learning-fundamentals?index=product&queryID=e2ee2dd83622509f69081a7604d2faba&position=8&linked_from=autocomplete&c=autocomplete">Machine Learning Fundamentals</a></li>
+                    <li><a href="https://www.edx.org/learn/digital-marketing/the-university-of-edinburgh-digital-marketing-strategy?index=product&queryID=21f1bce362994a14442bb72e5c491c3c&position=3&linked_from=autocomplete&c=autocomplete">Digital Marketing Strategies</a></li>
+                    <li><a href="https://www.edx.org/learn/cybersecurity/harvard-university-cs50-s-introduction-to-cybersecurity?index=product&queryID=d3df0dff945808b2703f6787622f2b53&position=1&linked_from=autocomplete&c=autocomplete"> Introduction To Cybersecurity</a></li>
+                    <li><a href="https://www.edx.org/learn/java/codio-java-programming-basic-skills?index=product&queryID=e46600e371df346ad5dc70b447840548&position=1&results_level=first-level-results&term=Java&objectID=course-c4d3188b-7bc9-4b86-ad70-9984a25b5c19&campaign=Java+Programming%3A+Basic+Skills&source=edX&product_category=course&placement_url=https%3A%2F%2Fwww.edx.org%2Fsearch"> Java</a></li>
+                </ul>
+            </section>
+
+            <section class="performance-analytics">
+                <h2>Performance Analytics</h2>
+                <div class="analytics-graph">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+                <button id="changeData">Change Data</button>
+            </section>
+
+            <button class="logout">Logout</button>
+        </main>
+    <script src="dash.js"></script>
+</body>
+</html>

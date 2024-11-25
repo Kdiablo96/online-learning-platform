@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #444; /* Light gray for background */
+    color: #ffffff;
+}
+
+header {
+    background: #2b28d3; /* Dark gray for header */
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-button:hover {
+    background: #666; /* Lighter gray on hover */
+}
+
+main {
+    padding: 20px 10%;
+}
+
+.contact-section {
+    background: #444; /* White for contrast */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    color: #ffffff;
+}
+
+.contact-section p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF; /* Blue for button */
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3; /* Darker blue on hover */
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 10px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.social-button:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background:#2b28d3 ;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

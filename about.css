@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color:rgb(109, 106, 106);
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 20px 10%;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.nav-button {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    background: #0056b3;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-button:hover {
+    background: #004494;
+}
+
+main {
+    padding: 20px 10%;
+}
+
+.about-section {
+    background: rgb(109, 106, 106);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 1200px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.team-member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #ffffff;
+    margin: 15px 0;
+    padding-left: 10px;
+    border-left: 4px solid #007BFF;
+}
+
+.timeline {
+    border-left: 2px solid #ddd;
+    padding-left: 20px;
+}
+
+.timeline-event {
+    margin: 10px 0;
+}
+
+.timeline-event h4 {
+    color: #007BFF;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+form {
+    margin-top: 10px;
+}
+
+form input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #0056b3;
+}

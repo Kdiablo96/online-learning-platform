@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>User Profile</title>
+</head>
+<body>
+    <div class="profile-container">
+
+        <div class="profile-image">
+            <br><br><br><br><br><br><br>
+            <input type="file" id="profilePic" accept="image/*" onchange="updateProfilePic(event)" />
+            <label for="profilePic" class="image-label">Upload Image</label>
+        </div>
+        
+        <div class="input-fields">
+            <input type="text" placeholder="Username" required />
+            <textarea placeholder="Bio/Description" rows="3"></textarea>
+            <input type="text" placeholder="Location" />
+            <input type="email" placeholder="Email" required />
+            <input type="tel" placeholder="Phone Number" />
+            <input type="text" placeholder="Interests/Skills" />
+            <input type="text" placeholder="Achievements/Badges" />
+            <input type="text" placeholder="Links to Projects/Work" />
+        </div>
+        
+        <div class="activity-feed">
+            <h3>Activity Feed</h3>
+            <ul>
+                <li>Posted a new article</li>
+                <li>Commented on a project</li>
+                <li>Followed Nana</li>
+            </ul>
+        </div>
+
+        <div class="social-links">
+            <h3>Contact Information</h3>
+            <input type="text" placeholder="Social Media Links" />
+        </div>
+
+        <div class="connections">
+            <h3>Followers/Connections</h3>
+            <p>Followed by: John, Mary, Alex</p>
+        </div>
+
+        <button type="submit">Save Profile</button>
+    </div>
+
+    <script>
+        function updateProfilePic(event) {
+            const file = event.target.files[0];
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                document.querySelector('.profile-image').style.backgroundImage = `url(${e.target.result})`;
+            };
+            reader.readAsDataURL(file);
+        }
+    </script>
+</body>
+</html>
